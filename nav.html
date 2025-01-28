@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #42d1f5;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i></a>
+		<a id="perso" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user"></i> Personnel</a>
+		<a id="social" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-people-group"></i> Cercle Social</a>
+		<a id="pro" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Professionnel</a>
+		<a id="cook" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-utensils"></i> Cuisine</a>
+		<a id="transport" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-road"></i> Transport</a>
+		<a id="fun" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-gamepad"></i> Divertissements</a>
+		<a id="wicked" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-circle-exclamation"></i> Wicked</a>
+		<a id="misc" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-box-archive"></i> Autres</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/yusk/Wolves-s-Lair-d14f8463f9ea44c0afd1b7dc63bcc19c", '_blank').focus();
+			else if (id == "perso")
+				window.open("https://www.notion.so/yusk/Personnel-189e1db5bbb28090b84cfa27f1491390", '_blank').focus();
+			else if (id == "social")
+				window.open("https://www.notion.so/yusk/Cercle-Social-189e1db5bbb280b79a4ccb90ec4dd22e", '_blank').focus();
+			else if (id == "pro")
+				window.open("https://www.notion.so/yusk/Professionnel-189e1db5bbb28065a3b1c73c0f4392fd", '_blank').focus();
+			else if (id == "cook")
+				window.open("https://www.notion.so/yusk/Cuisine-189e1db5bbb280afa770da3c019fe281", '_blank').focus();
+			else if (id == "transport")
+				window.open("https://www.notion.so/yusk/Transport-189e1db5bbb280078394f91432bc7ccc", '_blank').focus();
+			else if (id == "fun")
+				window.open("https://www.notion.so/yusk/Divertissements-189e1db5bbb28048be28c310fbb72316", '_blank').focus();
+			else if (id == "wicked")
+				window.open("https://www.notion.so/yusk/Wicked-f4e7b5a029384e62bc7861f829834cfe", '_blank').focus();
+			else if (id == "misc")
+				window.open("https://www.notion.so/yusk/Autre-189e1db5bbb2808c8009fefa65bfe961", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
